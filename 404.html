@@ -8,15 +8,18 @@
      font-family: 'Bad Script', cursive;
      font-size: 6vw;
      text-align: center;
-     display: table-cell;
-     *display: inline-block; /* IE6, IE7 hack */
-     vertical-align: middle;
     }
-    #rectangle {
+    #outer {
      display: table;
      width: 60vw;
      height: 60vh;
      margin: 20vh auto;
+    }
+    #inner {
+     text-align: center;
+     display: table-cell;
+     *display: inline-block; /* IE6, IE7 hack */
+     vertical-align: middle;
     }
     img {
      height: 6vw;
@@ -24,9 +27,11 @@
   </style>
  </head>
  <body>
-  <div id="rectangle">
-   <h2>404</h2>
-   <img src="logo.svg" onerror="this.onerror=null; this.src='logo.png'">
+  <div id="outer">
+   <div id="inner">
+    <h2>404</h2>
+    <img src="logo.svg" onerror="this.onerror=null; this.src='logo.png'">
+   </div>
   </div> 
  </body>
 </html>
