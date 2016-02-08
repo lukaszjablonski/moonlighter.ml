@@ -30,6 +30,6 @@ $(document).on('ready', function() {
  $('progress').bind("resize", function() {
    alert("Box was resized from 100x100 to 200x200");
   });
- $('progress').width(200).height(200).trigger("resize");
+ $('progress').trigger("resize");
  
 });
