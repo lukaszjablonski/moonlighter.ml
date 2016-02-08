@@ -2,8 +2,9 @@
  * monlighter.ml js
  */
 
-/* Scroll prgoress bar [https://css-tricks.com/reading-position-indicator/] */
-$(document).on('ready', function() {  
+$(document).on('ready', function() {
+ 
+ /* Scroll prgoress bar [https://css-tricks.com/reading-position-indicator/] */
  var winHeight = $(window).height(), 
      docHeight = $(document).height(),
      progressBar = $('progress'),
@@ -19,17 +20,20 @@ $(document).on('ready', function() {
  });
  
  $(window).on('resize', function() {
+  resize();
+ });
+ 
+ $('progress').bind('resize', function() {
+  resize();
+ });
+ 
+ function resize() {
   winHeight = $(window).height(),
   docHeight = $(document).height();
   max = docHeight - winHeight;
   progressBar.attr('max', max);
   value =  $(window).scrollTop();
   progressBar.attr('value', value);
- });
- 
- $('progress').bind("resize", function() {
-   alert("Box was resized from 100x100 to 200x200");
-  });
- $('progress').trigger("resize");
+ }
  
 });
