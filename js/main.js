@@ -27,4 +27,9 @@ $(document).on('ready', function() {
   progressBar.attr('value', value);
  });
  
+ $('progress').bind("resize", function() {
+   alert("Box was resized from 100x100 to 200x200");
+  });
+ $('progress').width(200).height(200).trigger("resize");
+ 
 });
