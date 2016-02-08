@@ -23,7 +23,7 @@ $(document).on('ready', function() {
   resize();
  });
  
- $('progress').bind('resize', function() {
+ progressBar.bind('resize', function() {
   resize();
  });
  
