@@ -37,3 +37,10 @@ $(document).on('ready', function() {
  }
  
 });
+
+function animateHeight(element) {
+ var el = $(element),
+ curHeight = el.height(),
+ autoHeight = el.css('height', 'auto').height();
+ el.height(curHeight).animate({height: autoHeight}, 300);
+}
