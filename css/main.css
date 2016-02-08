@@ -17,7 +17,7 @@ progress {
   border: none;
 
   /* Progress bar container for Firefox/IE10+ */
-  background-color: #fff;
+  background-color: transparent;
 
   /* Progress bar value for IE10+ */
   color: red;
