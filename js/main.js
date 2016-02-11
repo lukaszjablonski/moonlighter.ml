@@ -44,3 +44,10 @@ function animateHeight(element) {
  autoHeight = el.css('height', 'auto').height();
  el.height(curHeight).animate({height: autoHeight}, 300);
 }
+
+function animateWidth(element) {
+ var el = $(element),
+ curWidth = el.width(),
+ autoWidth = el.css('width', 'auto').width();
+ el.width(curWidth).animate({width: autoWidth}, 300);
+}
