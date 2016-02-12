@@ -43,5 +43,5 @@ function animateHeight(element) {
  curHeight = el.height(),
  autoHeight = el.css('height', 'auto').height();
  el.height(curHeight).animate({height: autoHeight}, 300);
- setTimeout(function(){$('progress').trigger('resize')}, 305);
+ setTimeout(function(){$('progress').trigger('resize')}, 300);
 }
