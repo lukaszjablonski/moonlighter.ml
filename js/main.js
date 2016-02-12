@@ -47,5 +47,5 @@ function animateHeight(element) {
   function() 
   {
     $('progress').trigger('resize')
-  }, 5000);
+  }, 301);
 }
