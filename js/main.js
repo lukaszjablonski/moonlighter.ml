@@ -44,7 +44,7 @@ function animateHeight(element,speed = 300) {
  autoHeight = el.css('height', 'auto').height();
  el.height(curHeight).animate({height: autoHeight}, speed);
  
- // change progressBar once after animation
+ // change progressBar only after animation
   //setTimeout(function(){$('progress').trigger('resize')}, speed);
  // change progressBar during animation
   var ani=setInterval(function(){ $('progress').trigger('resize')}, 1);
