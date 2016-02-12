@@ -27,9 +27,6 @@ $(document).on('ready', function() {
   resize();
  });
  
- 
-});
-
  function resize() {
   winHeight = $(window).height(),
   docHeight = $(document).height();
@@ -38,16 +35,18 @@ $(document).on('ready', function() {
   value =  $(window).scrollTop();
   progressBar.attr('value', value);
  }
+ 
+});
 
 function animateHeight(element) {
  var el = $(element),
  curHeight = el.height(),
  autoHeight = el.css('height', 'auto').height();
  el.height(curHeight).animate({height: autoHeight}, 300);
- setTimeout(
-  function() 
-  {
+ //setTimeout(
+  //function() 
+  //{
     //$('progress').trigger('resize')
-    resize()
-  }, 305);
+    resize();
+  //}, 305);
 }
