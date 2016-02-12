@@ -46,6 +46,7 @@ function animateHeight(element) {
  setTimeout(
   function() 
   {
-    $('progress').trigger('resize')
-  }, 301);
+    //$('progress').trigger('resize')
+    resize()
+  }, 305);
 }
