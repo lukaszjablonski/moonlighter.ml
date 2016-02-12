@@ -27,6 +27,9 @@ $(document).on('ready', function() {
   resize();
  });
  
+ 
+});
+
  function resize() {
   winHeight = $(window).height(),
   docHeight = $(document).height();
@@ -35,8 +38,6 @@ $(document).on('ready', function() {
   value =  $(window).scrollTop();
   progressBar.attr('value', value);
  }
- 
-});
 
 function animateHeight(element) {
  var el = $(element),
