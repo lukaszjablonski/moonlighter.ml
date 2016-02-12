@@ -42,11 +42,11 @@ function animateHeight(element,speed = 300) {
  var el = $(element),
  curHeight = el.height(),
  autoHeight = el.css('height', 'auto').height();
- el.height(curHeight).animate({height: autoHeight}, 300);
+ el.height(curHeight).animate({height: autoHeight}, speed);
  
  // change progressBar once after animation
-  //setTimeout(function(){$('progress').trigger('resize')}, 300);
+  //setTimeout(function(){$('progress').trigger('resize')}, speed);
  // change progressBar during animation
   var ani=setInterval(function(){ $('progress').trigger('resize')}, 1);
-  setTimeout(function(){clearInterval(ani)}, 300);
+  setTimeout(function(){clearInterval(ani)}, speed);
 }
