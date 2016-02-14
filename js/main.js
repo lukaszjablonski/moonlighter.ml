@@ -1,6 +1,6 @@
 /**
  * projects.monlighter.ml
- * by e-eightyseven.com
+ * by Lukasz Jablonski [e-eightyseven.com]
  */
 
 $(document).on('ready', function() {
