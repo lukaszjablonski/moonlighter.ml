@@ -1,5 +1,6 @@
 /**
- * monlighter.ml js
+ * projects.monlighter.ml
+ * by e-eightyseven.com
  */
 
 $(document).on('ready', function() {
