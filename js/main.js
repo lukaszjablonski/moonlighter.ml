@@ -10,9 +10,9 @@ $(document).on('ready', function() {
  progressBar = $('progress'),
  max, value;
 
- /* Set the max scrollable area */
- max = docHeight - winHeight;
- progressBar.attr('max', max);
+ // Set the max scrollable area
+  max = docHeight - winHeight;
+  progressBar.attr('max', max);
 
  $(document).on('scroll', function(){
   value = $(window).scrollTop();
@@ -20,10 +20,6 @@ $(document).on('ready', function() {
  });
  
  $(window).on('resize', function() {
-  resize();
- });
- 
- progressBar.bind('resize', function() {
   resize();
  });
  
@@ -35,6 +31,10 @@ $(document).on('ready', function() {
   value =  $(window).scrollTop();
   progressBar.attr('value', value);
  }
+ 
+ progressBar.bind('resize', function() {
+  resize();
+ });
  
 });
 
