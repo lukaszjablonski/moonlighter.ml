@@ -1,5 +1,4 @@
-moonlighter.ml
-========================
+# moonlighter.ml
 GitHub repository as a webserver for [moonlighter.ml](http://moonlighter.ml/)
 
 ## Help
