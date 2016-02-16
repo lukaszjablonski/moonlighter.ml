@@ -70,13 +70,15 @@ $(document).ready(function() {
  $allVideos.each(function() {
  // aspect ratio for each video
   var newWidth = 100;
+  var aspectRatio = this.height / this.width;
+  alert(asectRatio);
   $(this)
    .data('aspectRatio', this.height / this.width)
    // and remove the hard coded width/height
     .removeAttr('height')
     .removeAttr('width')
-    .width(newWidth+'%')
-    .height(newWidth * this.data('aspectRatio')+'%');
+    .width(newWidth + '%')
+    .height(newWidth * aspectRatio + '%');
     alert(this.height);
  });
 
