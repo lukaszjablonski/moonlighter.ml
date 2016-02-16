@@ -63,21 +63,18 @@ function animateHeight(element,speed = 300) {
  
 
 // VSU: Video size updater based on [2]
-$(document).ready(function() {
+ $(document).ready(function() {
  // Find all iframe videos (vimeo and youtube)
-  var $allVideos = $("iframe[src*='youtube']");
-
- $allVideos.each(function() {
- // change size of each video
-  var newWidth = $(this).parent().width();
-  var aspectRatio = this.height / this.width;
+  var $allVideos = $("iframe[src*='youtube'],iframe[src*='vimeo']");
+  $allVideos.each(function() {
+  // change size of each video
+   var newWidth = $(this).parent().width();
+   var aspectRatio = this.height / this.width;
    $(this)
     .width(newWidth)
     .height(newWidth * aspectRatio);
+  });
  });
-
-
-});
 
 /*
 $(window).resize(function() {
