@@ -68,10 +68,9 @@ $(document).ready(function() {
   var $allVideos = $("iframe[src*='youtube']");
 
  $allVideos.each(function() {
- // aspect ratio for each video
-  var newWidth = this.parent().width(); 
+ // change size of each video
+  var newWidth = $(this).parent().width();
   var aspectRatio = this.height / this.width;
-  // update width and height
    $(this)
     .width(newWidth)
     .height(newWidth * aspectRatio);
