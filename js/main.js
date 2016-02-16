@@ -72,7 +72,7 @@ $(document).ready(function() {
   var newWidth = $(this).parent().width(); 
   var aspectRatio = this.height / this.width;
   $(this)
-   .data('aspectRatio', this.height / this.width)
+   //.data('aspectRatio', this.height / this.width)
    // and remove the hard coded width/height
     .removeAttr('height')
     .removeAttr('width')
