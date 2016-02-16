@@ -70,6 +70,7 @@ $(document).ready(function() {
  $allVideos.each(function() {
  // aspect ratio for each video
   var newWidth = 100;
+  alert('OK');
   $(this)
    .data('aspectRatio', this.height / this.width)
    // and remove the hard coded width/height
