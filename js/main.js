@@ -63,12 +63,12 @@ function animateHeight(element,speed = 300) {
  
 
 // VSU: Video size updater based on [2]
-var $allVideos;
+var allVideos;
 $(document).ready(function() {
  // Find all iframe videos (vimeo and youtube)
-  $allVideos = $("iframe[src^='//player.vimeo.com'],iframe[src^='//www.youtube.com']");
+  allVideos = $("iframe[src^='//player.vimeo.com'],iframe[src^='//www.youtube.com']");
 
- $allVideos.each(function() {
+ allVideos.each(function() {
  // aspect ratio for each video
   $(this)
    .data('aspectRatio', this.height / this.width)
@@ -84,7 +84,7 @@ $(window).resize(function() {
 // when the window is resized
   var newWidth = 100;
 
-  $allVideos.each(function() {
+  allVideos.each(function() {
   // resize all videos according to their own aspect ratio
    var $el = $(this);
    $el
