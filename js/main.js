@@ -61,7 +61,7 @@ function animateHeight(element,speed = 300) {
   setTimeout(function(){clearInterval(ani)}, speed+5);
  }
  
- /*
+
 // VSU: Video size updater based on [2]
 $(document).ready(function() {
  // Find all iframe videos (vimeo and youtube)
@@ -93,4 +93,4 @@ $(window).resize(function() {
 }).resize();
 });
 // VSU END
-*/
+
