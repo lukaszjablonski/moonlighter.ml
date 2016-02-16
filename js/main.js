@@ -65,7 +65,7 @@ function animateHeight(element,speed = 300) {
 // VSU: Video size updater based on [2]
 $(document).ready(function() {
  // Find all iframe videos (vimeo and youtube)
-  var $allVideos = $("iframe[src^='//www.youtube.com']");
+  var $allVideos = $("iframe[src*='youtube']");
   alert($allVideos.length);
 
  $allVideos.each(function() {
