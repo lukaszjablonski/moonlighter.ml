@@ -73,9 +73,10 @@ $(document).ready(function() {
   var aspectRatio = this.height / this.width;
   $(this)
    //.data('aspectRatio', this.height / this.width)
-   // and remove the hard coded width/height
-    .removeAttr('height')
-    .removeAttr('width')
+   // remove original width and height
+    //.removeAttr('height')
+    //.removeAttr('width')
+   // set new width and height
     .width(newWidth)
     .height(newWidth * aspectRatio);
  });
