@@ -2,7 +2,7 @@
  * projects.monlighter.ml
  * by Lukasz Jablonski [e-eightyseven.com]
  */
-
+var progressBar;
 $(document).on('ready', function() {
  
  /* Scroll prgoress bar [https://css-tricks.com/reading-position-indicator/] */
@@ -49,6 +49,6 @@ function animateHeight(element,speed = 300) {
   //setTimeout(function(){progressBar.trigger('resize')}, speed+5);
  
  // change progressBar during animation
-  var ani=setInterval(function(){ progressBar.trigger('resize')}, 1);
+  var ani=setInterval(function(){progressBar.trigger('resize')}, 1);
   setTimeout(function(){clearInterval(ani)}, speed+5);
  }
