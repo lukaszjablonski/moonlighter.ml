@@ -67,6 +67,7 @@ var allVideos;
 $(document).ready(function() {
  // Find all iframe videos (vimeo and youtube)
   allVideos = $("iframe[src^='//www.youtube.com']");
+  alert(allVideos);
 
  allVideos.each(function() {
  // aspect ratio for each video
