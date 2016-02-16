@@ -70,16 +70,20 @@ $(document).ready(function() {
 
  allVideos.each(function() {
  // aspect ratio for each video
+  var newWidth = 100;
   $(this)
    .data('aspectRatio', this.height / this.width)
    // and remove the hard coded width/height
     .removeAttr('height')
-    .removeAttr('width');
+    .removeAttr('width')
+    .width(newWidth+'%')
+    .height(newWidth * $el.data('aspectRatio')+'%');
  });
 
 
 });
 
+/*
 $(window).resize(function() {
 // when the window is resized
   var newWidth = 100;
@@ -93,7 +97,6 @@ $(window).resize(function() {
   });
 
 // Kick off one resize to fix all videos on page load
-//}).resize();
-});
+}).resize();*/
 // VSU END
 
