@@ -3,12 +3,13 @@
  * by Lukasz Jablonski [e-eightyseven.com]
  */
 
+var progressBar = $('progress'); // progress bar element
 $(document).on('ready', function() {
  
  /* Scroll prgoress bar [https://css-tricks.com/reading-position-indicator/] */
  var winHeight = $(window).height(), 
  docHeight = $(document).height(),
- progressBar = $('progress'), // progress bar element
+ //progressBar = $('progress'), // progress bar element
  max, value;
 
  // Set the max scrollable area
