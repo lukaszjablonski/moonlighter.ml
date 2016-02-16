@@ -37,17 +37,18 @@ $(document).on('ready', function() {
   resizeProgressBar();
  });
  
- function animateHeight(element,speed = 300) {
-  var el = $(element),
-  curHeight = el.height(),
-  autoHeight = el.css('height', 'auto').height();
-  el.height(curHeight).animate({height: autoHeight}, speed);
- 
-  // change progressBar only after animation
-   //setTimeout(function(){progressBar.trigger('resize')}, speed+5);
-  // change progressBar during animation
-   var ani=setInterval(function(){ progressBar.trigger('resize')}, 1);
-   setTimeout(function(){clearInterval(ani)}, speed+5);
- }
- 
 });
+
+function animateHeight(element,speed = 300) {
+ var el = $(element),
+ curHeight = el.height(),
+ autoHeight = el.css('height', 'auto').height();
+ el.height(curHeight).animate({height: autoHeight}, speed);
+ 
+ // change progressBar only after animation
+  //setTimeout(function(){progressBar.trigger('resize')}, speed+5);
+ 
+ // change progressBar during animation
+  var ani=setInterval(function(){ progressBar.trigger('resize')}, 1);
+  setTimeout(function(){clearInterval(ani)}, speed+5);
+ }
