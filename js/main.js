@@ -1,10 +1,10 @@
 /**
- *  projects.monlighter.ml
- *  by Lukasz Jablonski [e-eightyseven.com]
+ * projects.monlighter.ml
+ * by Lukasz Jablonski [e-eightyseven.com]
  * 
- *  Resources:
- *  1. https://css-tricks.com/reading-position-indicator/
- *  2 .https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ * Resources:
+ * 1. https://css-tricks.com/reading-position-indicator/
+ * 2 .https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
  */
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
