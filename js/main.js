@@ -71,7 +71,7 @@ $(document).ready(function() {
  // aspect ratio for each video
   var newWidth = 100;
   var aspectRatio = this.height / this.width;
-  alert(aspectRatio);
+  alert(this.parent().width());
   $(this)
    .data('aspectRatio', this.height / this.width)
    // and remove the hard coded width/height
@@ -79,7 +79,6 @@ $(document).ready(function() {
     .removeAttr('width')
     .width(newWidth + '%')
     .height(newWidth * aspectRatio + '%');
-    alert(this.height);
  });
 
 
