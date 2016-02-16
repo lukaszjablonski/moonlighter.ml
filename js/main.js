@@ -76,7 +76,7 @@ $(document).ready(function() {
     .removeAttr('height')
     .removeAttr('width')
     .width(newWidth+'%')
-    .height(newWidth * $(this).data('aspectRatio')+'%');
+    .height(newWidth * this.data('aspectRatio')+'%');
     alert(this.height);
  });
 
