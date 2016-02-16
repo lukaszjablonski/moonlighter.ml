@@ -66,6 +66,7 @@ function animateHeight(element,speed = 300) {
 $(document).ready(function() {
  // Find all iframe videos (vimeo and youtube)
   var $allVideos = $("iframe[src^='//www.youtube.com']");
+  alert($allVideos);
 
  $allVideos.each(function() {
  // aspect ratio for each video
