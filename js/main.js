@@ -8,8 +8,10 @@ $(document).on('ready', function() {
  /* Scroll prgoress bar [https://css-tricks.com/reading-position-indicator/] */
  var winHeight = $(window).height(), 
  docHeight = $(document).height(),
- progressBar = $('progress'), // progress bar element
+ //progressBar = $('progress'), // progress bar element
  max, value;
+ 
+ progressBar = $('progress');
 
  // Set the max scrollable area
   max = docHeight - winHeight;
