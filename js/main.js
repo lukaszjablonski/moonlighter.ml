@@ -69,14 +69,10 @@ $(document).ready(function() {
 
  $allVideos.each(function() {
  // aspect ratio for each video
-  var newWidth = $(this).parent().width(); 
+  var newWidth = this.parent().width(); 
   var aspectRatio = this.height / this.width;
-  $(this)
-   //.data('aspectRatio', this.height / this.width)
-   // remove original width and height
-    //.removeAttr('height')
-    //.removeAttr('width')
-   // set new width and height
+  // update width and height
+   $(this)
     .width(newWidth)
     .height(newWidth * aspectRatio);
  });
