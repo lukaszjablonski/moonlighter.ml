@@ -75,21 +75,5 @@ function animateHeight(element,speed = 300) {
     .height(newWidth * aspectRatio);
   });
  });
-
-/*
-$(window).resize(function() {
-// when the window is resized
-  var newWidth = 100;
-
-  allVideos.each(function() {
-  // resize all videos according to their own aspect ratio
-   var $el = $(this);
-   $el
-    .width(newWidth+'%')
-    .height(newWidth * $el.data('aspectRatio')+'%');
-  });
-
-// Kick off one resize to fix all videos on page load
-}).resize();*/
 // VSU END
 
