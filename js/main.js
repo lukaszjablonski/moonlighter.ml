@@ -78,8 +78,7 @@ function animateHeight(element,speed = 300) {
 // VSU END
 
 function resizeIframe(element) {
- var el = $(element);
- el.height = el.contentWindow.document.body.scrollHeight + 'px';
+ $('element').height( $('element').contents('body').outerHeight() );
  alert(el.height);
 }
 
