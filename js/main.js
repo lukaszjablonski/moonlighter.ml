@@ -79,7 +79,7 @@ function animateHeight(element,speed = 300) {
 
 function resizeIframe(element) {
  $('element').height( $('element').contents('body').outerHeight() );
- alert(el.height);
+ alert($('element').height);
 }
 
 $(document).ready(function(){resizeIframe('#comment-editor');});
