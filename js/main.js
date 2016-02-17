@@ -29,7 +29,7 @@
   
   $(window).on('resize', function() {
    resizeProgressBar();
-  }).resize();;
+  });
   
   function resizeProgressBar() {
    winHeight = $(window).height(),
