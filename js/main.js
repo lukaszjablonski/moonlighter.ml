@@ -80,6 +80,7 @@ function animateHeight(element,speed = 300) {
 function resizeIframe(element) {
  var el = $(element);
  el.height = el.contentWindow.document.body.scrollHeight + 'px';
+ alert(el.height);
 }
 
 $(document).ready(function{resizeIframe('#comment-editor');});
