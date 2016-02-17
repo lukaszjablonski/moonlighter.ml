@@ -4,7 +4,7 @@
  * 
  * Resources:
  * 1. https://css-tricks.com/reading-position-indicator/
- * 2 .https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ * 2. https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
  */
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
@@ -29,7 +29,7 @@
   
   $(window).on('resize', function() {
    resizeProgressBar();
-  });
+  }).resize();;
   
   function resizeProgressBar() {
    winHeight = $(window).height(),
