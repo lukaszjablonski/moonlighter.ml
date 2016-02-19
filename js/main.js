@@ -47,7 +47,9 @@
  });
 // SPB END
 
-function animateHeight(element,speed = 300) {
+function animateHeight(element,speed) {
+ speed = (typeof speed === 'undefined') ? 300 : speed; // speed is optional, 300 is default
+ 
  var el = $(element),
  curHeight = el.height(),
  autoHeight = el.css('height', 'auto').height();
