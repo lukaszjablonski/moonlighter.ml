@@ -73,7 +73,7 @@ function animateHeight(element,speed = 300) {
    $(this)
     // remove width and height original attributes
      .removeAttr('height')
-     .removeAttr('width');
+     .removeAttr('width')
     // add new width and height as style
      .width(newWidth)
      .height(newWidth * aspectRatio);
