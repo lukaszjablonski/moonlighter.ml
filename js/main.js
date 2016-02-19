@@ -69,7 +69,7 @@ function animateHeight(element,speed = 300) {
   $allVideos.each(function() {
   // change size of each video
    var newWidth = $(this).parent().width();
-   var aspectRatio = $(this).height / $(this).width;
+   var aspectRatio = this.height / this.width;
    $(this)
     // remove original width and height attributes
      //.removeAttr('height')
