@@ -69,12 +69,15 @@ function animateHeight(element,speed = 300) {
   $allVideos.each(function() {
   // change size of each video
    var newWidth = $(this).parent().width();
-   var aspectRatio = this.height / this.width;
+   var aspectRatio = $(this).height / $(this).width;
    $(this)
-    // remove width and height original attributes
-     .removeAttr('height')
-     .removeAttr('width')
-    // add new width and height as style
+    // remove original width and height attributes
+     //.removeAttr('height')
+     //.removeAttr('width')
+    // change original width and height attributes
+     .attr('width',newWidth)
+     .attr('height',newWidth * aspectRatio)
+    // add new width and height as a style
      .width(newWidth)
      .height(newWidth * aspectRatio);
   });
