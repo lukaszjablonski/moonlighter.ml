@@ -81,4 +81,4 @@ function resizeIframe(element) {
  $(element).height( $(element).contents('body').outerHeight()+300 );
 }
 
-$(document).ready(function(){resizeIframe('#comment-editor');});
+//$(document).ready(function(){resizeIframe('#comment-editor');});
