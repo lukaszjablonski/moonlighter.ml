@@ -71,14 +71,18 @@ function animateHeight(element,speed = 300) {
    var newWidth = $(this).parent().width();
    var aspectRatio = this.height / this.width;
    $(this)
-    .width(newWidth)
-    .height(newWidth * aspectRatio);
+    // remove width and height original attributes
+     .removeAttr('height')
+     .removeAttr('width');
+    // add new width and height as style
+     .width(newWidth)
+     .height(newWidth * aspectRatio);
   });
  });
 // VSU END
 
 function resizeIframe(element) {
- $(element).height( $(element).contents('body').outerHeight()+300 );
+ $(element).height( $(element).contents('body').outerHeight() );
 }
 
 //$(document).ready(function(){resizeIframe('#comment-editor');});
