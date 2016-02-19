@@ -78,8 +78,8 @@ function animateHeight(element,speed = 300) {
 // VSU END
 
 function resizeIframe(element) {
- //$(element).height( $('element').contents('body').outerHeight()+300 );
- $(element).height( 300 );
+ $(element).height( $(element).contents('body').outerHeight()+300 );
+ //$(element).height( 300 );
 }
 
 $(document).ready(function(){resizeIframe('#comment-editor');});
