@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+HelloBlogger
+Test widget for Blogger
+by Lukasz Jablonski
+
+important links:
+https://www.blogger.com/gadget-submit.g
+https://developers.google.com/gadgets/docs/basic
+-->
+
+<Module>
+  <ModulePrefs
+   title="HelloBlogger"
+   title_url="https://github.com/lukaszjablonski/Swogger/" 
+   height="200"
+   author="Lukasz Jablonski"
+   author_email="lukasz.jablonski@wp.eu" /> 
+ <Content type="html">
+  <![CDATA[
+   Hello blogger! 
+  ]]>
+
+  </Content>
+</Module>
