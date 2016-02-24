@@ -43,6 +43,8 @@
   progressBar.bind('resize', function() {
    resizeProgressBar();
   });
+  
+  resizeProgressBar(); // run once
  
  });
 // SPB END
