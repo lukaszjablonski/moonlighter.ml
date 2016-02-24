@@ -44,7 +44,7 @@
    resizeProgressBar();
   });
   
-  // resizeProgressBar(); // run once (important when page refreshes)
+  resizeProgressBar(); // run once (important on page refresh)
  
  });
 // SPB END
