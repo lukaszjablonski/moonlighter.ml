@@ -57,8 +57,8 @@ $(window).bind("load", function() {
     $('html').animate({'margin-top': '+='+newMargin}, 300);
     $('#cookieChoiceDismiss').off('click');
     $('#cookieChoiceDismiss').click(function() {
-     $('html').animate({'margin-top': '-='+newMargin}, 300);
-     _dismissLinkClick;
+     $('html').animate({'margin-top': '-='+newMargin}, 100);
+     setTimeout(function(){_dismissLinkClick}, 100);
     });
   }
 });
