@@ -60,8 +60,9 @@ $(window).bind("load", function() {
     $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
     $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
     //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
-    _dismissLinkClick();
+    //_dismissLinkClick();
    });
+   document.getElementById('cookieChoiceDismiss').onclick = _dismissLinkClick;
   }
 });
 
