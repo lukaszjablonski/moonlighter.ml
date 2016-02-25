@@ -55,10 +55,12 @@ $(window).bind("load", function() {
    //$('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
     var newMargin = $('#cookieChoiceInfo').outerHeight();
     $('html').animate({'margin-top': '+='+newMargin}, 300);
+    $('#cookieChoiceDismiss').off('click');
+    $('#cookieChoiceDismiss').click(function() {
+     $('html').animate({'margin-top': '-='+newMargin}, 300);
+     _dismissLinkClick;
+    });
   }
-  $('#cookieChoiceDismiss').click(function() {
-   $('html').animate({'margin-top': '-='+newMargin}, 300);
-  });
 });
 
 function animateHeight(element,speed) {
