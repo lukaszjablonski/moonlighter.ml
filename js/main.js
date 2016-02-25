@@ -59,7 +59,8 @@ $(window).bind("load", function() {
    $('#cookieChoiceDismiss').click(function() {
     $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
     $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
-    setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
+    //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
+    _dismissLinkClick();
    });
   }
 });
