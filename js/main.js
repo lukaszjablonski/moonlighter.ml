@@ -52,8 +52,9 @@
 $(window).bind("load", function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
-    $('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
-    animateTopMargin('html');
+   //$('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
+    newMargin = $('html').css('margin-top') + $('#cookieChoiceInfo').outerHeight();
+    $('html').animate({'margin-top': newMargin}, 300);
   }
 });
 
@@ -64,22 +65,6 @@ function animateHeight(element,speed) {
  curHeight = el.height(),
  autoHeight = el.css('height', 'auto').height();
  el.height(curHeight).animate({height: autoHeight}, speed);
- 
- // change progressBar only after animation (needs global progresBar variable)
-  //setTimeout(function(){progressBar.trigger('resize')}, speed+5);
- 
- // change progressBar during animation (needs global progresBar variable)
-  var ani=setInterval(function(){progressBar.trigger('resize')}, 1);
-  setTimeout(function(){clearInterval(ani)}, speed+5);
-}
-
-function animateTopMargin(element,speed) {
- speed = (typeof speed === 'undefined') ? 300 : speed; // speed is optional, 300 is default
- 
- var el = $(element),
- curHeight = el.css('margin-top'),
- autoHeight = el.css('margin-top', 'auto').css('margin-top');
- el.css('margin-top',curHeight).animate({'margin-top': autoHeight}, speed);
  
  // change progressBar only after animation (needs global progresBar variable)
   //setTimeout(function(){progressBar.trigger('resize')}, speed+5);
