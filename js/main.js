@@ -63,7 +63,7 @@ $(window).bind("load", function() {
     //_dismissLinkClick();
     //window['_dismissLinkClick']();
     //eval("_dismissLinkClick");
-    window.cookieChoices._dismissLinkClick;
+    window.cookieChoices['_dismissLinkClick'];
    });
   }
 });
