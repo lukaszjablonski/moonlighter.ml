@@ -50,7 +50,7 @@
 // SPB END
 
 $(document).on('load', function() {
-  if($('#cookieChoiceInfo').length>0) $('body').css('margin-top',$('body').css('margin-top') + $('#cookieChoiceInfo').css('height'));
+  if($('#cookieChoiceInfo').length>0) alert('ok');
 }
 
 function animateHeight(element,speed) {
