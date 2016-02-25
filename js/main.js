@@ -19,8 +19,8 @@
   progressBar = $('progress'); // update global variable for progress bar element
 
   // Set the max scrollable area
-   //max = docHeight - winHeight;
-   //progressBar.attr('max', max);
+   max = docHeight - winHeight;
+   progressBar.attr('max', max);
  
   $(document).on('scroll', function(){
    value = $(window).scrollTop();
