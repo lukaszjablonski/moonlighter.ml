@@ -62,7 +62,8 @@ $(window).bind("load", function() {
     //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
     //_dismissLinkClick();
     //window['_dismissLinkClick']();
-    eval("_dismissLinkClick");
+    //eval("_dismissLinkClick");
+    window.cookieChoices._dismissLinkClick;
    });
   }
 });
