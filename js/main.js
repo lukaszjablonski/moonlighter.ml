@@ -45,7 +45,7 @@
   });
   
   resizeProgressBar(); // run once (important on page refresh)
-  if($('#cookieChoiceInfo')) $('body').css('margin-top','150px');
+  if($('#cookieChoiceInfo')>0) $('body').css('margin-top','150px');
  
  });
 // SPB END
