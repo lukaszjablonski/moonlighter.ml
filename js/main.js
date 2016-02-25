@@ -64,7 +64,10 @@ function animateHeight(element,speed) {
   var ani=setInterval(function(){progressBar.trigger('resize')}, 1);
   setTimeout(function(){clearInterval(ani)}, speed+5);
 }
- 
+
+$('body').on('DOMNodeInserted', '#cookieChoiceInfo', function () {
+      alert('alert loaded'); 
+});
 
 // VSU: Video size updater based on [2]
  $(document).ready(function() {
