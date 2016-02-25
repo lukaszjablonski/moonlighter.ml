@@ -63,7 +63,7 @@ function animateHeight(element,speed) {
  // change progressBar during animation (needs global progresBar variable)
   var ani=setInterval(function(){progressBar.trigger('resize')}, 1);
   setTimeout(function(){clearInterval(ani)}, speed+5);
- }
+}
  
 
 // VSU: Video size updater based on [2]
