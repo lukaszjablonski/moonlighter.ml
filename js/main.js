@@ -55,13 +55,11 @@ $(window).bind("load", function() {
    var newMargin = $('#cookieChoiceInfo').outerHeight();
    var alertAnimationSpeed = 100;
    $('html').animate({'margin-top': '+='+newMargin}, alertAnimationSpeed);
-   //$('#cookieChoiceDismiss').off('click'); // remove original event
-   //$('#cookieChoiceDismiss').removeAttr('onclick'); // remove original event
    document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
    $('#cookieChoiceDismiss').click(function() {
     $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
-    //$('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
-    //setTimeout(function(){_dismissLinkClick}, alertAnimationSpeed+50); // call original event after animation
+    $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
+    setTimeout(function(){_dismissLinkClick}, alertAnimationSpeed+50); // call original event after animation
    });
   }
 });
