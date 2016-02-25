@@ -49,9 +49,9 @@
  });
 // SPB END
 
-$(document).on('load', function() {
-  if($('#cookieChoiceInfo').length>0) $('html').css('margin-top',$('html').css('margin-top') + $('#cookieChoiceInfo').css('height'));
-}
+//$(document).on('load', function() {
+//  if($('#cookieChoiceInfo').length>0) $('html').css('margin-top',$('html').css('margin-top') + $('#cookieChoiceInfo').css('height'));
+//}
 
 function animateHeight(element,speed) {
  speed = (typeof speed === 'undefined') ? 300 : speed; // speed is optional, 300 is default
