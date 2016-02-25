@@ -51,7 +51,7 @@
 
 $(window).bind("load", function() {
 // run after entire page has loaded
-  if ($('#cookieChoiceInfo').length>0) $('html').css('margin-top','200px');
+  if($('#cookieChoiceInfo').length>0) $('html').css('margin-top','200px');
 });
 
 function animateHeight(element,speed) {
