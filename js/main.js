@@ -61,9 +61,9 @@ $(window).bind("load", function() {
     $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
     //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
     //_dismissLinkClick();
-    window['_dismissLinkClick']();
+    //window['_dismissLinkClick']();
+    eval("_dismissLinkClick");
    });
-   //document.getElementById('cookieChoiceDismiss').onclick = _dismissLinkClick;
   }
 });
 
