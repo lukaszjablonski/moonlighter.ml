@@ -53,9 +53,12 @@ $(window).bind("load", function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
    //$('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
-    newMargin = $('#cookieChoiceInfo').outerHeight();
+    var newMargin = $('#cookieChoiceInfo').outerHeight();
     $('html').animate({'margin-top': '+='+newMargin}, 300);
   }
+  $('#cookieChoiceDismiss').click(function() {
+   $('html').animate({'margin-top': '-='+newMargin}, 300);
+  });
 });
 
 function animateHeight(element,speed) {
