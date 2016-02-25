@@ -52,14 +52,14 @@
 $(window).bind("load", function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
-   //$('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
-    var newMargin = $('#cookieChoiceInfo').outerHeight();
-    $('html').animate({'margin-top': '+='+newMargin}, 300);
-    $('#cookieChoiceDismiss').off('click'); // remove original event
-    $('#cookieChoiceDismiss').click(function() {
-     $('html').animate({'margin-top': '-='+newMargin}, 100);
-     setTimeout(function(){_dismissLinkClick}, 105); // call original event after animation
-    });
+   var newMargin = $('#cookieChoiceInfo').outerHeight();
+   var alertAnimationSpeed = 100;
+   $('html').animate({'margin-top': '+='+newMargin}, alertAnimationSpeed);
+   $('#cookieChoiceDismiss').off('click'); // remove original event
+   $('#cookieChoiceDismiss').click(function() {
+    $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
+    setTimeout(function(){_dismissLinkClick}, alertAnimationSpeed+20); // call original event after animation
+   });
   }
 });
 
