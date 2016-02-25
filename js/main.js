@@ -53,7 +53,7 @@ $(window).bind("load", function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
     $('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
-    animateTopMargin();
+    animateTopMargin('html');
   }
 });
 
