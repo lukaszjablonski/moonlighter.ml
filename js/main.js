@@ -49,10 +49,6 @@
  });
 // SPB END
 
-$(document).on('load', function() {
-  if($('#cookieChoiceInfo').length>0) alert('ok');
-});
-
 function animateHeight(element,speed) {
  speed = (typeof speed === 'undefined') ? 300 : speed; // speed is optional, 300 is default
  
