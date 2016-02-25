@@ -19,8 +19,8 @@
   progressBar = $('progress'); // update global variable for progress bar element
 
   // Set the max scrollable area
-   max = docHeight - winHeight;
-   progressBar.attr('max', max);
+   //max = docHeight - winHeight;
+   //progressBar.attr('max', max);
  
   $(document).on('scroll', function(){
    value = $(window).scrollTop();
@@ -45,10 +45,13 @@
   });
   
   resizeProgressBar(); // run once (important on page refresh)
-  if($('#cookieChoiceInfo').length>0) {alert('works')} else{alert('wrong')};
  
  });
 // SPB END
+
+$(document).on('load', function() {
+  if($('#cookieChoiceInfo').length>0) $('html').css('margin-top',$('html').css('margin-top') + $('#cookieChoiceInfo').css('height'));
+}
 
 function animateHeight(element,speed) {
  speed = (typeof speed === 'undefined') ? 300 : speed; // speed is optional, 300 is default
