@@ -53,8 +53,8 @@ $(window).bind("load", function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
    //$('html').css('margin-top',$('#cookieChoiceInfo').outerHeight());
-    newMargin = $('html').css('margin-top') + $('#cookieChoiceInfo').outerHeight();
-    $('html').animate({'margin-top': newMargin}, 300);
+    newMargin = $('#cookieChoiceInfo').outerHeight();
+    $('html').animate({'margin-top': '+='+newMargin}, 300);
   }
 });
 
