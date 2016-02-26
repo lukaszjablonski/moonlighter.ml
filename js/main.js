@@ -55,7 +55,7 @@ $(window).bind("load", function() {
    var newMargin = $('#cookieChoiceInfo').outerHeight();
    var alertAnimationSpeed = 100;
    $('html').animate({'margin-top': '+='+newMargin}, alertAnimationSpeed);
-   document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
+   //document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
    $('#cookieChoiceDismiss').click(function() {
     $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
     $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
@@ -63,7 +63,7 @@ $(window).bind("load", function() {
     //_dismissLinkClick();
     //window['_dismissLinkClick']();
     //eval("_dismissLinkClick");
-    window.cookieChoices['_dismissLinkClick'];
+    //window.cookieChoices['_dismissLinkClick'];
    });
   }
 });
