@@ -7,6 +7,14 @@
  * 2. https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
  */
  
+cookieOptions = {
+// custom cookies alert
+ 'msg': 'Google uses cookies here',
+ //'link': '',
+ 'close': 'nevermind',
+ 'learn': 'why?'
+};
+ 
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
  var progressBar; // global variable for progress bar element
  
