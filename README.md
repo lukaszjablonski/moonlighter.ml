@@ -1,5 +1,5 @@
 # moonlighter.ml
-GitHub repository as a webserver for [moonlighter.ml](http://moonlighter.ml/)
+Web hosting for [moonlighter.ml](http://moonlighter.ml/)
 
 ## Help
 1. [About supported custom domains](https://help.github.com/articles/about-supported-custom-domains/)
