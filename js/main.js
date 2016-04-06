@@ -63,6 +63,7 @@ $(window).bind("load", function() {
    var newMargin = $('#cookieChoiceInfo').outerHeight();
    var alertAnimationSpeed = 100;
    $('html').animate({'margin-top': '+='+newMargin}, alertAnimationSpeed);
+   progressBar.animate({'top': '+='+newMargin}, alertAnimationSpeed)
    //document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
    $('#cookieChoiceDismiss').click(function() {
     $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
