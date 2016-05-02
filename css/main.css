@@ -43,8 +43,8 @@ progress::-moz-progress-bar {
 
 a[target="_blank"]:after {
   display:inline-block;
-  background: url("http://moonlighter.ml/svg/external.svg") no-repeat center center;
-  content:"";
-  width:1em;
-  height:1em;
+  background: url("http://moonlighter.ml/svg/external.svg") no-repeat center;
+  content: "";
+  width: 1em;
+  height: 1em;
 }
