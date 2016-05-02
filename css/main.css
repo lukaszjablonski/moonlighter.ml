@@ -50,7 +50,8 @@ progress::-moz-progress-bar {
        url('../fonts/fontawesome-webfont.ttf?v=4.6.1') format('truetype'),
        url('../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular') format('svg');
   font-weight: normal;
-  font-style: normal}
+  font-style: normal;
+}
 
 a[target="_blank"]:after {
   content: "\f08e";
