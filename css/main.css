@@ -41,4 +41,4 @@ progress::-moz-progress-bar {
   background-color: #FF5300;
 }
 
-a[target="_blank"] { color: green;}
+a[target="_blank"] { color: green !important;}
