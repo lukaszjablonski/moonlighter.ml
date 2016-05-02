@@ -41,4 +41,7 @@ progress::-moz-progress-bar {
   background-color: #FF5300;
 }
 
-a[target="_blank"] { color: green !important;}
+a[target="_blank"]:after {
+  display:block;
+  background: url("http://moonlighter.ml/svg/external.svg") no-repeat;;
+}
