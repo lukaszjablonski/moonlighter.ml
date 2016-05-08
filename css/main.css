@@ -53,7 +53,7 @@ progress::-moz-progress-bar {
   font-style: normal;
 }
 
-a[target="_blank"]:after {
+a[target="_blank"]:not(cite a):after {
   content: "\00a0\f08e";
   font-family: 'FontAwesome';
   font-weight: normal;
