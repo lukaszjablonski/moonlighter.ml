@@ -2,7 +2,7 @@
 Web hosting for [moonlighter.ml](http://moonlighter.ml/)
 
 ## A little help
-1. `gh-pages` branch need to be created and set as `default`
+1. `gh-pages` branch needs to be created and set as `default`
 2. `CNAME` file in the `gh-pages` branch stores custom domain name to be used.
 3. `A records` of the custom domain should be pointed to: `192.30.252.153` and `192.30.252.154`.
 4. `404.html` will be displayed when error 404 will occur.
