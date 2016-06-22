@@ -1,7 +1,7 @@
 # moonlighter.ml
 Web hosting for [moonlighter.ml](http://moonlighter.ml/)
 
-"CNAME" file in the repository stores custom domain name to be used. "A" records for custom domain should be set to: 192.30.252.153 and 192.30.252.154.
+"CNAME" file in the repository stores custom domain name to be used. "A" records for the custom domain should be set to: 192.30.252.153 and 192.30.252.154.
 
 ## Resources
 1. [About supported custom domains](https://help.github.com/articles/about-supported-custom-domains/)
