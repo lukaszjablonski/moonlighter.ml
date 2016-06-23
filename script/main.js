@@ -20,6 +20,8 @@ cookieOptions = {
  
  $(document).on('ready', function() {
   
+  $("#comment-editor").scrollTop(400);
+  
   var winHeight = $(window).height(), 
   docHeight = $(document).height(),
   max, value;
