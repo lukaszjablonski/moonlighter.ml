@@ -20,10 +20,6 @@ cookieOptions = {
  
  $(document).on('ready', function() {
   
-  alert("checking...");
-  alert(window.frames['comment-editor'].document.body.offsetWidth);
-  alert(document.getElementById('comment-editor').offsetWidth);
-  
   var winHeight = $(window).height(), 
   docHeight = $(document).height(),
   max, value;
