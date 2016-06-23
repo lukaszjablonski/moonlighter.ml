@@ -121,5 +121,6 @@ function resizeIframe(element) {
 
 //$(document).ready(function(){resizeIframe('#comment-editor');});
 
+alert("checking...");
 alert(frames['comment-editor'].document.body.offsetWidth);
 alert(document.getElementById('comment-editor').offsetWidth);
