@@ -66,6 +66,6 @@ a[target="_blank"]:after {
   content: "";
 }
 
-textarea {
+textarea, #commentBodyField {
   resize: none !important;
 }
