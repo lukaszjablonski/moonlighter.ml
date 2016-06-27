@@ -65,3 +65,7 @@ a[target="_blank"]:after {
 .source a:after {
   content: "";
 }
+
+textarea {
+  resize: none;
+}
