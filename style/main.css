@@ -65,7 +65,3 @@ a[target="_blank"]:after {
 .source a:after {
   content: "";
 }
-
-textarea, #commentBodyField {
-  resize: none !important;
-}
