@@ -114,9 +114,3 @@ function animateHeight(element,speed) {
   });
  });
 // VSU END
-
-function resizeIframe(element) {
- $(element).height( $(element).contents('body').outerHeight() );
-}
-
-//$(document).ready(function(){resizeIframe('#comment-editor');});
