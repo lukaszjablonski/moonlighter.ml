@@ -14,6 +14,12 @@ cookieOptions = {
  'close': 'nevermind',
  'learn': 'why?'
 };
+$(document).on('ready', function() {
+ var cookieBtns = document.getElementById('cookieChoiceInfo').getElementsByTagName('A');
+ cookieBtns.forEach(function(entry) {
+  entry.removeAttr('target');
+ });
+});
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
  var progressBar; // global variable for progress bar element
@@ -115,8 +121,8 @@ function animateHeight(element,speed) {
  });
 // VSU END
 
-     var listUL = document.getElementById('PageList1').getElementsByTagName("UL")[0];
-     var listLI = document.createElement("LI");
-     listLI.setAttribute("id", "searchBtn");
+     var listUL = document.getElementById('PageList1').getElementsByTagName('UL')[0];
+     var listLI = document.createElement('LI');
+     listLI.setAttribute('id', 'searchBtn');
      listUL.appendChild(listLI);
      
