@@ -15,7 +15,7 @@ cookieOptions = {
  'learn': 'why?'
 };
 $( window ).on('load', function() {
- document.querySelectorAll(".myclass").forEach(function(element, index, array) {
+  $(document).querySelectorAll(".myclass").forEach(function(element, index, array) {
   element.removeAttr('target');
  });
 });
