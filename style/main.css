@@ -62,6 +62,7 @@ a[target="_blank"]:after {
   text-decoration: inherit;
 }
 
+#cookieChoiceInfo a:after,
 .source a:after {
   content: "";
 }
