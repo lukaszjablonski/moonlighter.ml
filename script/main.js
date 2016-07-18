@@ -14,12 +14,11 @@ cookieOptions = {
  'close': 'nevermind',
  'learn': 'why?'
 };
-$( window ).on('load', function() {
- var $ = jQuery.noConflict();
-  $(document).querySelectorAll(".myclass").forEach(function(element, index, array) {
+window.onload = function() {
+ document.querySelectorAll(".myclass").forEach(function(element, index, array) {
   element.removeAttr('target');
  });
-});
+};
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
  var progressBar; // global variable for progress bar element
