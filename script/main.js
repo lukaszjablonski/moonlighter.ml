@@ -19,6 +19,7 @@ window.onload = function() {
     function(element, index, array) {
         element.removeAttr('target');
     }
+    );
 };
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
