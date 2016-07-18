@@ -15,7 +15,7 @@ cookieOptions = {
  'learn': 'why?'
 };
 $( window ).on('load', function() {
- var cookieBtns = document.getElementById('cookieChoiceInfo').getElementsByClassName(cookie-choices-buttons")[0].getElementsByTagName('A');
+ var cookieBtns = document.getElementById('cookieChoiceInfo').getElementsByClassName('cookie-choices-buttons')[0].getElementsByTagName('A');
  cookieBtns.forEach(function(entry) {
   entry.removeAttr('target');
  });
