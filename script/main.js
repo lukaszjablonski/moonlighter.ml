@@ -10,7 +10,7 @@
 cookieOptions = {
 // custom cookies alert
  'msg': 'Google uses cookies here',
- //'link': '',
+ 'link': '/p/cookies.hml',
  'close': 'nevermind',
  'learn': 'why?'
 };
@@ -18,9 +18,8 @@ window.onload = function() {
  var test = document.getElementsByClassName('cookie-choices-button');
  console.log(test);
  [].forEach.call(test, function(element,index,array) {
-        element.removeAttribute('target');
-    }
-    );
+  element.removeAttribute('target');
+ });
 };
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
