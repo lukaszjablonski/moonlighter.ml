@@ -14,7 +14,7 @@ cookieOptions = {
  'close': 'nevermind',
  'learn': 'why?'
 };
-$(document).on('ready', function() {
+$( window ).on('load', function() {
  var cookieBtns = document.getElementById('cookieChoiceInfo').getElementsByTagName('A');
  cookieBtns.forEach(function(entry) {
   entry.removeAttr('target');
@@ -100,7 +100,7 @@ function animateHeight(element,speed) {
 }
 
 // VSU: Video size updater based on [2]
- $(document).ready(function() {
+ $(document).on('ready', function() {
  // Find all iframe videos (vimeo and youtube)
   var $allVideos = $("iframe[src*='youtube'],iframe[src*='vimeo']");
   $allVideos.each(function() {
