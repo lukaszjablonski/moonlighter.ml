@@ -121,9 +121,10 @@ function animateHeight(element,speed) {
  });
 // VSU END
 
- $(document).on('ready', function() {
-     var listUL = document.getElementById('PageList1').getElementsByTagName('UL')[0];
-     var listLI = document.createElement('LI');
-     listLI.setAttribute('id', 'searchBtn');
-     listUL.appendChild(listLI);
- });
+$(document).on('ready', function() {
+ var listUL = document.getElementById('PageList1').getElementsByTagName('UL')[0];
+ var listLI = document.createElement('LI');
+ listLI.setAttribute('id', 'searchBtn');
+ listUL.appendChild(listLI);
+ //f002
+});
