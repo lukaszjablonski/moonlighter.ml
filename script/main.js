@@ -16,6 +16,7 @@ cookieOptions = {
 };
 $( window ).on('load', function() {
  var cookieBtns = document.getElementsByClassName('cookie-choices-buttons')[0].getElementsByTagName('A');
+ console.log(cookieBtns);
  cookieBtns.forEach(function(entry) {
   entry.removeAttr('target');
  });
