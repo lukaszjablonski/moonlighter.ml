@@ -15,11 +15,11 @@ cookieOptions = {
  'learn': 'why?'
 };
 $( window ).on('load', function() {
- var cookieBtns = document.getElementsByClassName('cookie-choices-buttons')[0].getElementsByTagName('A');
- console.log(cookieBtns);
- cookieBtns.forEach(function(entry) {
-  entry.removeAttr('target');
- });
+ Array.from(document.getElementsByClassName('cookie-choices-buttons')[0].getElementsByTagName('A').forEach(
+    function(element, index, array) {
+        element.removeAttr('target');
+    }
+ );
 });
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
