@@ -16,7 +16,6 @@ cookieOptions = {
 };
 window.onload = function() {
  var test = document.getElementsByClassName('cookie-choices-button');
- console.log(test);
  [].forEach.call(test, function(element,index,array) {
   element.removeAttribute('target');
  });
@@ -122,8 +121,9 @@ function animateHeight(element,speed) {
  });
 // VSU END
 
+ $(document).on('ready', function() {
      var listUL = document.getElementById('PageList1').getElementsByTagName('UL')[0];
      var listLI = document.createElement('LI');
      listLI.setAttribute('id', 'searchBtn');
      listUL.appendChild(listLI);
-     
+ });
