@@ -15,11 +15,9 @@ cookieOptions = {
  'learn': 'why?'
 };
 $( window ).on('load', function() {
- Array.from(document.getElementsByClassName('cookie-choices-button')).forEach(
-    function(element, index, array) {
-        element.removeAttr('target');
-    }
- );
+ document.querySelectorAll(".myclass").forEach(function(element, index, array) {
+  element.removeAttr('target');
+ });
 });
  
 // SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
