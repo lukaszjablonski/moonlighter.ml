@@ -10,7 +10,7 @@
 cookieOptions = {
 // custom cookies alert
  'msg': 'Google uses cookies here',
- 'link': '/p/cookies.hml',
+ 'link': '/p/cookies.html',
  'close': 'nevermind',
  'learn': 'why?'
 };
