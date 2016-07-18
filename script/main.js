@@ -15,7 +15,7 @@ cookieOptions = {
  'learn': 'why?'
 };
 window.onload = function() {
- document.querySelectorAll(".myclass").forEach(function(element, index, array) {
+ document.querySelectorAll('cookie-choices-button').forEach(function(element, index, array) {
   element.removeAttr('target');
  });
 };
