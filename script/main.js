@@ -15,7 +15,9 @@ cookieOptions = {
  'learn': 'why?'
 };
 window.onload = function() {
- Array.from(document.getElementsByClassName('cookie-choices-button')).forEach(
+ var test = document.getElementsByClassName('cookie-choices-button');
+ console.log(test);
+ Array.from(test).forEach(
     function(element, index, array) {
         element.removeAttr('target');
     }
