@@ -128,3 +128,16 @@ $(document).on('ready', function() {
  listUL.appendChild(listLI);
  //f002
 });
+
+/*
+var scrollPos = 0;
+var maxScroll = 1000;
+var targetOpacity = 1;
+$(window).scroll(function() {
+  scrollPos = $(document).scrollTop();
+  scrollPos < maxScroll ? targetOpacity = scrollPos/maxScroll : targetOpacity;
+  $('span').css({
+    'background-color': 'rgba(0, 0, 0, '+ targetOpacity +')'
+  });
+});
+*/
