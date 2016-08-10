@@ -55,7 +55,7 @@ progress::-moz-progress-bar {
 
 a[target="_blank"]:after {
   font-size: 0.6em;
-  vertical-align: center;
+  vertical-align: top;
   content: "\00a0\f08e";
   font-family: 'FontAwesome';
   font-weight: normal;
