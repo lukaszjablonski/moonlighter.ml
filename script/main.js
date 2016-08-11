@@ -2,6 +2,9 @@
  * projects.monlighter.ml
  * by Lukasz Jablonski [e-eightyseven.com]
  * 
+ * add in the head of the blogger template:
+ * <script>var url = "<data:blog.homepageUrl/>"</script>
+ * 
  * Resources:
  * 1. https://css-tricks.com/reading-position-indicator/
  * 2. https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
