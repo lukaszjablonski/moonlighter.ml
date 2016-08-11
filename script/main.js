@@ -134,7 +134,7 @@ $(document).on('ready', function() {
 // <script>var url = "<data:blog.homepageUrl/>"</script>
  var elements = document.getElementsByTagName('a');
  for(var i = 0, len = elements.length; i < len; i++) {
-  if(window.location.href.indexOf(url) !== -1) {
+  if(elements[i].href.indexOf(url) !== -1) {
    elements[i].onclick = function () {
     hideIndex();
    }
