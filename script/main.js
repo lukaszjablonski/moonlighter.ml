@@ -140,7 +140,7 @@ $(document).on('ready', function() {
    }
   }
  }
-}
+});
 
 /*
 var scrollPos = 0;
