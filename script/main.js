@@ -2,9 +2,6 @@
  * projects.monlighter.ml
  * by Lukasz Jablonski [e-eightyseven.com]
  * 
- * add in the head of the blogger template:
- * <script>var url = "<data:blog.homepageUrl/>"</script>
- * 
  * Resources:
  * 1. https://css-tricks.com/reading-position-indicator/
  * 2. https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
@@ -131,6 +128,18 @@ $(document).on('ready', function() {
  listUL.appendChild(listLI);
  //f002
 });
+
+$(document).on('ready', function() {
+// add in the head of the blogger template:
+// <script>var url = "<data:blog.homepageUrl/>"</script>
+ var elements = document.getElementsByTagName('a');
+ for(var i = 0, len = elements.length; i < len; i++) {
+  if(window.location.href.indexOf(url) !== -1)
+   elements[i].onclick = function () {
+   
+   }
+ }
+}
 
 /*
 var scrollPos = 0;
