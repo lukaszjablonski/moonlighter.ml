@@ -129,6 +129,9 @@ $(document).on('ready', function() {
  //f002
 });
 
+function hideIndex() {
+ document.getElementById('header-index').style.display = 'none';
+}
 $(document).on('ready', function() {
 // add in the head of the blogger template:
 // <script>var url = "<data:blog.homepageUrl/>"</script>
