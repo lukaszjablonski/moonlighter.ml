@@ -136,7 +136,7 @@ $(document).on('ready', function() {
  for(var i = 0, len = elements.length; i < len; i++) {
   if(window.location.href.indexOf(url) !== -1) {
    elements[i].onclick = function () {
-   
+    hideIndex();
    }
   }
  }
