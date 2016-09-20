@@ -145,7 +145,7 @@ $(document).on('ready', function() {
  }
 });
 
-/*
+
 var scrollPos = 0;
 var maxScroll = 1000;
 var targetOpacity = 1;
@@ -156,4 +156,4 @@ $(window).scroll(function() {
     'background-color': 'rgba(0, 0, 0, '+ targetOpacity +')'
   });
 });
-*/
+
