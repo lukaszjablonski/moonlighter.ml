@@ -99,6 +99,19 @@ function animateHeight(element,speed) {
   setTimeout(function(){clearInterval(ani)}, speed+5);
 }
 
+function interactive(el,v) {
+ var element = document.getElementById(el);
+ var displaystate = element.style.display;
+ 
+ // wrap with div element
+ if(element.parentNode.id.indexOf('wrap_'+el) == -1) $( '#'+el ).wrap( "<div id='wrap_"+el+"'></div>" );
+ 
+ if(displaystate!="none"){element.style.display="none";}
+ else{element.style.display="block";}
+ 
+ animateHeight('#wrap_'+el);
+}
+
 // VSU: Video size updater based on [2]
  $(document).on('ready', function() {
  // Find all iframe videos (vimeo and youtube)
