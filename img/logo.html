@@ -38,6 +38,10 @@
    Remove background
   </button>
   
+  <button id="white_bg">
+   White background
+  </button>
+  
   <button id="save">
    Download as PNG!
   </button>
@@ -45,6 +49,10 @@
   <script>
    $("#no_bg").click(function(){
     document.getElementById("background").setAttribute("display", "none");
+   })
+   $("#white_bg").click(function(){
+    document.getElementById("background").setAttribute("display", "block");
+    document.getElementById("background").setAttribute("fill", "#ffffff");
    })
    // http://codepen.io/Lawrence_Scafuri/pen/dXaZLE
    $("#save").click(function(){
