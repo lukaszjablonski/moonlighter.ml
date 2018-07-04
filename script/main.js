@@ -1,5 +1,5 @@
 /**
- * projects.monlighter.ml
+ * blog.monlighter.ml
  * by Lukasz Jablonski [e-eightyseven.com]
  * 
  * Resources:
