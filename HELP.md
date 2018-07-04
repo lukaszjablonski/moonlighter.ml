@@ -13,3 +13,4 @@
 5. [Using GitHub Pages To Host Your Website](http://blog.teamtreehouse.com/using-github-pages-to-host-your-website)
 6. [Redirects on GitHub Pages](https://help.github.com/articles/redirects-on-github-pages/)
 7. [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+8. [Custom domains on GitHub Pages gain support for HTTPS ](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/)
