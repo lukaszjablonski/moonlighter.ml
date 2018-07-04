@@ -63,7 +63,7 @@ window.onload = function() {
  });
 // SPB END
 
-$(window).bind(='load', function() {
+$(window).bind('load', function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
    var newMargin = $('#cookieChoiceInfo').outerHeight();
