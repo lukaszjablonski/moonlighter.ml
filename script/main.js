@@ -3,8 +3,8 @@
  * by Lukasz Jablonski [e-eightyseven.com]
  * 
  * Resources:
- * 1. https://css-tricks.com/reading-position-indicator/
- * 2. https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ * [1] https://css-tricks.com/reading-position-indicator/
+ * [2] https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
  */
  
 cookieOptions = {
@@ -21,7 +21,7 @@ window.onload = function() {
  });
 };
  
-// SPB: Scrolling prgoress bar aka Reading Position Indicator based on [1]
+// SPB: Scrolling progress bar aka Reading Position Indicator based on [1]
  var progressBar; // global variable for progress bar element
  
  $(document).on('ready', function() {
@@ -63,7 +63,7 @@ window.onload = function() {
  });
 // SPB END
 
-$(window).bind("load", function() {
+$(window).bind(='load', function() {
 // run after entire page has loaded
   if($('#cookieChoiceInfo').length>0){
    var newMargin = $('#cookieChoiceInfo').outerHeight();
@@ -73,6 +73,7 @@ $(window).bind("load", function() {
    //document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
    $('#cookieChoiceDismiss').click(function() {
     $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
+    progressBar.animate({'top': '-='+newMargin}, alertAnimationSpeed)
     $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
     //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
     //_dismissLinkClick();
