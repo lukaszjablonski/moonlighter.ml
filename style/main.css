@@ -68,3 +68,5 @@ a[target="_blank"]:after {
 .source a:after {
   content: "";
 }
+
+.cookie-choices-info {position: fixed; top: auto !important; bottom: 0px !important;}
