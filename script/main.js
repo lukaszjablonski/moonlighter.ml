@@ -32,7 +32,7 @@ window.onload = function() {
  
   progressBar = $('progress'); // update global variable for progress bar element
 
-  // Set the max scrollable area
+  // set the max scrollable area
    max = docHeight - winHeight;
    progressBar.attr('max', max);
  
