@@ -65,23 +65,23 @@ window.onload = function() {
 
 $(window).bind('load', function() {
 // run after entire page has loaded
-  if($('#cookieChoiceInfo').length>0){
-   var newMargin = $('#cookieChoiceInfo').outerHeight();
-   var alertAnimationSpeed = 100;
-   $('html').animate({'margin-top': '+='+newMargin}, alertAnimationSpeed);
-   progressBar.animate({'top': '+='+newMargin}, alertAnimationSpeed)
-   //document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
-   $('#cookieChoiceDismiss').click(function() {
-    $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
-    progressBar.animate({'top': '-='+newMargin}, alertAnimationSpeed)
-    $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
-    //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
-    //_dismissLinkClick();
-    //window['_dismissLinkClick']();
-    //eval("_dismissLinkClick");
-    //window.cookieChoices['_dismissLinkClick'];
-   });
-  }
+ if($('#cookieChoiceInfo').length>0){
+  var newMargin = $('#cookieChoiceInfo').outerHeight();
+  var alertAnimationSpeed = 100;
+  $('html').animate({'margin-top': '+='+newMargin}, alertAnimationSpeed);
+  progressBar.animate({'top': '+='+newMargin}, alertAnimationSpeed)
+  //document.getElementById('cookieChoiceDismiss').onclick = null; // remove original event
+  $('#cookieChoiceDismiss').click(function() {
+   $('html').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
+   progressBar.animate({'top': '-='+newMargin}, alertAnimationSpeed)
+   $('#cookieChoiceDismiss').animate({'margin-top': '-='+newMargin}, alertAnimationSpeed);
+   //setTimeout(function(){_dismissLinkClick()}, alertAnimationSpeed+50); // call original event after animation
+   //_dismissLinkClick();
+   //window['_dismissLinkClick']();
+   //eval("_dismissLinkClick");
+   //window.cookieChoices['_dismissLinkClick'];
+  });
+ }
 });
 
 function animateHeight(element,speed) {
